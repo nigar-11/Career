@@ -1,0 +1,42 @@
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.card__img img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 85%;
+}
+
+input[type="checkbox"]:checked + .checkBoxPeer::after {
+  content: "\2713" !important;
+  font-size: 0.6rem;
+  color: white;
+  padding-left: 7px;
+  padding-top: 3px;
+  background-color: "#381E72" !important;
+}
+
+input[type="checkbox"] + .checkBoxPeer::after {
+  content: "\2715" !important;
+  font-size: 0.6rem;
+  color: white;
+  padding-left: 7px;
+  padding-top: 3px;
+  background-color: "#8B8B8B" !important;
+}
